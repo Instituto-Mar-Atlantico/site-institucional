@@ -9,7 +9,7 @@
     <button matButton>Parceiros</button>
     <button matButton>Contato</button>
     
-    <button matIconButton (click)="toggleTheme()">
-        <mat-icon>dark_mode</mat-icon>
+    <button matIconButton (click)="toggleTheme()" [attr.aria-label]="themeAriaLabel()">
+        <mat-icon>{{ themeIcon() }}</mat-icon>
     </button>
 </mat-toolbar>
