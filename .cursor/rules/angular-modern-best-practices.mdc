@@ -1,0 +1,27 @@
+---
+description: Boas praticas modernas de Angular para todo o projeto
+alwaysApply: true
+---
+
+# Angular moderno (obrigatorio)
+
+- Use componentes standalone por padrao.
+- Prefira `inject()` a construtor para DI.
+- Use `ChangeDetectionStrategy.OnPush` em todos os componentes novos.
+- Mantenha componentes pequenos e com responsabilidade unica.
+- Evite logica pesada em template; extraia para `computed`, `signal` ou metodo.
+- Em listas, sempre use `track` no `@for` (ou `trackBy` no `*ngFor`).
+- Tipagem estrita: nunca usar `any` sem justificativa.
+- Evite acoplamento: compartilhamento por `@Input()`, `@Output()` e servicos.
+
+## Fluxo de estado
+
+- Prefira `signal`, `computed` e `effect` para estado local.
+- Use RxJS apenas quando realmente necessario (streams assincronas e composicao).
+- Sempre limpar side effects e subscriptions quando aplicavel.
+
+## Qualidade
+
+- Escreva codigo claro e simples antes de buscar abstracoes.
+- Nao duplicar logica: extrair utilitarios e servicos reutilizaveis.
+- Em caso de duvida entre "esperto" e "simples", escolha simples.

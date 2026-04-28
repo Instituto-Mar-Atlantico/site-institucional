@@ -1,0 +1,24 @@
+---
+description: Uso moderno e puro de Angular Material
+alwaysApply: true
+---
+
+# Angular Material (obrigatorio)
+
+- Priorize componentes oficiais do Angular Material antes de criar UI customizada.
+- Use API MDC atual (`mat-mdc-*`) e evite padroes legados.
+- Estilize via tema/tokens do Material; evite sobrescrever classes internas.
+- Nao usar `::ng-deep` para customizacao de Material.
+- Garanta acessibilidade: `aria-label`, contraste e foco visivel.
+- Icones, botoes, formularios e layout devem seguir guideline oficial Material 3.
+
+## Tematizacao
+
+- Centralize cores, tipografia e densidade no tema.
+- Reaproveite variaveis/tokens; nao hardcode de cor em componente.
+- Suporte dark mode por tema, nao por hacks locais.
+
+## Evitar
+
+- Criar componente custom quando um `mat-*` resolve com configuracao.
+- Repetir CSS para "corrigir" componente sem antes tentar API oficial.

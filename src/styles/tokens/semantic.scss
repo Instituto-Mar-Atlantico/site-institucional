@@ -1,0 +1,26 @@
+:root {
+    /* Background */
+    --bg-default: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-muted: #eef7fb;
+  
+    /* Text */
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --text-inverse: #ffffff;
+  
+    /* Borders */
+    --border-default: #e2e8f0;
+    --border-strong: #cbd5e1;
+  
+    /* Brand */
+    --brand-primary: #2f96c3;
+    --brand-secondary: #2ea86b;
+  
+    /* States */
+    --state-success: #2ea86b;
+    --state-warning: #f2b72f;
+    --state-error: #e5484d;
+    --state-info: #2f96c3;
+  }

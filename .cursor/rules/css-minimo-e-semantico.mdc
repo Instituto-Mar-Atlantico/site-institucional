@@ -1,0 +1,25 @@
+---
+description: CSS minimo, sem perder boas praticas
+alwaysApply: true
+---
+
+# CSS minimo e semantico (obrigatorio)
+
+- Use primeiro recursos do Angular e Angular Material; CSS so para complementar.
+- Evite CSS desnecessario: cada regra deve ter objetivo claro.
+- Prefira layout simples (flex/grid) e remova wrappers sem funcao.
+- Nao usar `!important`, seletores profundos ou alta especificidade sem necessidade.
+- Priorize classes semanticas e nomes curtos, evitando acoplamento ao HTML.
+- Reutilize tokens de design (`src/styles/tokens`) antes de criar novos valores.
+
+## Ordem de decisao
+
+1. Resolver com componente/API Angular Material.
+2. Resolver com estrutura HTML semantica.
+3. Adicionar o menor CSS possivel.
+
+## Checklist rapido antes de finalizar
+
+- Este CSS pode ser removido sem quebrar funcionalidade?
+- Existe token/tema ja existente para esse valor?
+- Existe forma mais simples de obter o mesmo resultado?

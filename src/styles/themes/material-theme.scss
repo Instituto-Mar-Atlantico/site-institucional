@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+
+/* Tema light */
+$light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$cyan-palette,
+    tertiary: mat.$green-palette,
+  )
+));
+
+/* Tema dark */
+$dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$cyan-palette,
+    tertiary: mat.$green-palette,
+  )
+));
+
+@include mat.core();
+
+/* Light global */
+@include mat.all-component-themes($light-theme);
+
+/* Dark escopado */
+[data-theme="dark"] {
+  @include mat.all-component-colors($dark-theme);
+}

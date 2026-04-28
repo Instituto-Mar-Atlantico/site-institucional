@@ -1,0 +1,51 @@
+/* Ocean palette (derivada) */
+$ocean-palette: (
+  50:  #eef7fb,
+  100: #d9eef7,
+  200: #b6dced,
+  300: #8ec8e1,
+  400: #5bb1d3,
+  500: #2f96c3,
+  600: #2179a3,
+  700: #1c6183,
+  800: #1b516b,
+  900: #1a455a,
+  contrast: (
+    50:  #0f172a,
+    100: #0f172a,
+    200: #0f172a,
+    300: #0f172a,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+  )
+);
+
+/* Forest palette (derivada) */
+$forest-palette: (
+  50:  #eefaf3,
+  100: #d6f3e3,
+  200: #aee6c8,
+  300: #7dd6a9,
+  400: #4fc488,
+  500: #2ea86b,
+  600: #228a57,
+  700: #1d6e47,
+  800: #1b583a,
+  900: #184a32,
+  contrast: (
+    50:  #0f172a,
+    100: #0f172a,
+    200: #0f172a,
+    300: #0f172a,
+    400: #0f172a,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+  )
+);
